@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Piedra, Papel o Tijera</h1>
+    
+    <!-- Sección para ingresar el nombre -->
+    <div id="name-section">
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+        <button onclick="empezarJuego()">Empezar</button>
+    </div>
+
+    <!-- Sección del juego (oculta inicialmente) -->
+    <div id="game" style="display: none;">
+        <p id="saludo"></p>
+        <button onclick="jugar('Piedra')">Piedra</button>
+        <button onclick="jugar('Papel')">Papel</button>
+        <button onclick="jugar('Tijera')">Tijera</button>
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Historial de partidas -->
+    <h2>Historial de Partidas</h2>
+    <table id="historial" border="1">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Jugador</th>
+                <th>Computadora</th>
+                <th>Resultado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Mensaje de autor -->
+    <footer>
+        <p>Realizado por [ROSA MARIA MAPALLO 11B]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
